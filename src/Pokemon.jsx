@@ -44,7 +44,8 @@ export const Pokemon = () => {
   if (loading) {
     return (
       <div>
-        <h1>Loading</h1>
+        <h1>Loading.... 
+        please wait a second </h1>
       </div>
     );
   }
