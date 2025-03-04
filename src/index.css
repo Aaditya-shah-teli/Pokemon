@@ -219,3 +219,57 @@
       cursor: pointer;
     }
   }
+/* Existing styles remain unchanged */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  
+  .container {
+    padding: 0 2rem;
+  }
+
+  .grid-three-cols,
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pokemon-card {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .grid-three-cols,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .pokemon-card {
+    min-height: auto;
+    padding: 1.2rem;
+  }
+  
+  .pokemon-name {
+    font-size: 2.4rem;
+  }
+
+  .pokemon-image {
+    width: 80%;
+    height: auto;
+  }
+}
